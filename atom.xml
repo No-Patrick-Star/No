@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://no-patrick-star.github.io/"/>
-  <updated>2020-05-18T04:35:02.240Z</updated>
+  <updated>2020-05-18T14:56:18.539Z</updated>
   <id>https://no-patrick-star.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>入门数据结构-树状数组</title>
+    <link href="https://no-patrick-star.github.io/2020/05/18/%E5%85%A5%E9%97%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
+    <id>https://no-patrick-star.github.io/2020/05/18/%E5%85%A5%E9%97%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/</id>
+    <published>2020-05-18T12:36:11.000Z</published>
+    <updated>2020-05-18T14:56:18.539Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;del&gt;前置知识：没啥好前置的，总不能是数组吧hh&lt;/del&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-什么是树状数组&quot;&gt;&lt;a href=&quot;#1-什么是树状数组&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ACM" scheme="https://no-patrick-star.github.io/categories/ACM/"/>
+    
+    
+      <category term="数据结构" scheme="https://no-patrick-star.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
   
   <entry>
     <title>AtCoder Beginner Contest 168 - D</title>
