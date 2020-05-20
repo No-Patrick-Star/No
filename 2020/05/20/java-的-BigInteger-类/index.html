@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="分类, 派大星的博客空间">
+    <meta name="keywords" content="java 的 BigInteger 类, 派大星的博客空间">
     <meta name="description" content="层楼终究误少年，自由早晚乱余生">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>分类 | 派大星的博客空间</title>
+    <title>java 的 BigInteger 类 | 派大星的博客空间</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://pic1.zhimg.com/50/v2-6b5f969328a179e15d680b15af99847b_hd.webp')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">categories</h1>
+                    <h1 class="description center-align post-title">java 的 BigInteger 类</h1>
                 </div>
             </div>
         </div>
@@ -430,12 +430,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/JAVA-%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">JAVA 学习</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/ACM/" class="post-category">
+                                ACM
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -444,28 +457,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-18
+                    2020-05-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-18
+                    2020-05-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    589
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -480,7 +493,46 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h2 id="1-为什么要使用JAVA的BigInteger类？"><a href="#1-为什么要使用JAVA的BigInteger类？" class="headerlink" title="1.为什么要使用JAVA的BigInteger类？"></a>1.为什么要使用JAVA的BigInteger类？</h2><p>因为JAVA有很完善的大数运算法则而且在ACM这种比手速的比赛，用C++数组模拟，效率可见一斑。。 <del>因为我懒，懒得用C++数组模拟，Python又不会，只能用java水一下这样子勉强维持生活</del></p>
+<h2 id="2-什么是BigInteger-类？"><a href="#2-什么是BigInteger-类？" class="headerlink" title="2.什么是BigInteger 类？"></a>2.什么是BigInteger 类？</h2><p>是JAVA的大整数类运算，可以实现加减乘除等基本运算</p>
+<h2 id="3-JAVA-BigInteger类-内容的详细介绍"><a href="#3-JAVA-BigInteger类-内容的详细介绍" class="headerlink" title="3.JAVA BigInteger类 内容的详细介绍"></a>3.JAVA BigInteger类 内容的详细介绍</h2><h3 id="1-从定义开始"><a href="#1-从定义开始" class="headerlink" title="1.从定义开始"></a>1.从定义开始</h3><h4 id="（1）常见的函数"><a href="#（1）常见的函数" class="headerlink" title="（1）常见的函数"></a>（1）常见的函数</h4><pre class=" language-java"><code class="language-java">BigInteger A  <span class="token operator">=</span> BigInteger<span class="token punctuation">.</span>ZERO
+BigInteger B  <span class="token operator">=</span> BigInteger<span class="token punctuation">.</span>ONE
+BigInteger C  <span class="token operator">=</span> BigInteger<span class="token punctuation">.</span>TWO
+BigInteger D  <span class="token operator">=</span> BigInteger<span class="token punctuation">.</span>TEN</code></pre>
+<h4 id="（2）具体解释"><a href="#（2）具体解释" class="headerlink" title="（2）具体解释"></a>（2）具体解释</h4><p>1.valueOf(); 强转类型</p>
+<p>比如</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+
+BigInteger b <span class="token operator">=</span> BigInteger<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+b <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span></code></pre>
+<p>再比如</p>
+<pre class=" language-java"><code class="language-java">String s <span class="token operator">=</span> <span class="token string">" 12345"</span><span class="token punctuation">;</span>
+
+BigInteger c <span class="token operator">=</span> BigInteger<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+c <span class="token operator">=</span> <span class="token number">12345</span></code></pre>
+<p>2.add(); 大整数相加</p>
+<pre class=" language-java"><code class="language-java">BigInteger a<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span>“<span class="token number">23</span>”<span class="token punctuation">)</span><span class="token punctuation">;</span>
+BigInteger b<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span>“<span class="token number">34</span>”<span class="token punctuation">)</span><span class="token punctuation">;</span>
+a<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>3.subtract()； 相减</p>
+<p>4.multiply(); 相乘</p>
+<p>5.divide(); 相除取整</p>
+<p>6.remainder(); 取余</p>
+<p>7.pow(); a.pow(b)=a^b</p>
+<p>8.gcd(); 最大公约数</p>
+<p>9.abs(); 绝对值</p>
+<p>10.negate(); 取反数</p>
+<p>11.mod(); a.mod(b)=a%b=a.remainder(b);</p>
+<p>12.max(); min();</p>
+<p>13.public int comareTo();</p>
+<p>返回-1，0或1，分别为BigInteger在数字上小于，等于，或大于值val。</p>
+<p>14.boolean equals(); 是否相等</p>
+<p>15.BigInteger构造函数：</p>
+<p>一般用到以下两种：<br>BigInteger(String val);<br>将指定字符串转换为十进制表示形式；<br>BigInteger(String val,int radix);<br>将指定基数的 BigInteger 的字符串表示形式转换为 BigInteger</p>
+<h3 id="2-补充"><a href="#2-补充" class="headerlink" title="2.补充"></a>2.补充</h3><p>a=a.pow(b);   //a = a的b次方<br>a=a.stripTrailingZeros();   //去掉后导0<br>d=a.toPlainString();   //不让其变成科学计数法的表示法，变成一般的小数表示<br>if(d.charAt(0)==’0’)  d=d.substring(1);  //与前导的字符串比较<br>if(s.startsWith(“0.”))  s=s.substring(1);  //与前导的字符串比较<br>and();  // 例如a.and(b),计算a&amp;b<br>doubleValue();  //转化为double类型<br>longValue();  //转化为long类型<br>floatValue();  // 转化为float类型<br>intValue();  //转化为int类型<br>divideAndRemainder(BigInteger val)<br>//返回包含 (this / val) 后跟 (this % val) 的两个 BigInteger 的数组。<br>boolean isProbablePrime(BigInteger n)  //判断大数是否为素数<br>modPow(BigInteger n, BigInteger mod)  //计算this^n % mod<br>nextProbablePrime(BigInteger n) //返回比大数n大的为素数的数<br>not()  //计算 ~this<br>or(BigInteger a)  //计算this|a<br>xor(BigInteger val)  //返回其值为 (this ^ val) 的 BigInteger。<br>probablePrime(int bitLength, Random rnd)<br>//返回有可能是素数的、具有指定长度的正 BigInteger。<br>shiftLeft(int n)  //返回其值为 (this &lt;&lt; n) 的 BigInteger。<br>shiftRight(int n) //返回其值为 (this &gt;&gt; n) 的 BigInteger。</p>
+
             </div>
             <hr/>
 
@@ -505,7 +557,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://no-patrick-star.github.io/categories/index-2.html">https://no-patrick-star.github.io/categories/index-2.html</a>
+                    <a href="https://no-patrick-star.github.io/2020/05/20/java-%E7%9A%84-BigInteger-%E7%B1%BB/">https://no-patrick-star.github.io/2020/05/20/java-%E7%9A%84-BigInteger-%E7%B1%BB/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -542,7 +594,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/JAVA-%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">JAVA 学习</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -711,7 +767,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2020-05-18T02-10-29',
+        id: '2020-05-20T09-23-01',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -740,34 +796,45 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/categories/index-2.html">
+                <a href="/2020/05/20/java-%E7%9A%84-BigInteger-%E7%B1%BB/">
                     <div class="card-image">
                         
+                        <img src="https://pic1.zhimg.com/50/v2-6b5f969328a179e15d680b15af99847b_hd.webp" class="responsive-img" alt="java 的 BigInteger 类">
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="categories">
-                        
-                        <span class="card-title">categories</span>
+                        <span class="card-title">java 的 BigInteger 类</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            1.为什么要使用JAVA的BigInteger类？因为JAVA有很完善的大数运算法则而且在ACM这种比手速的比赛，用C++数组模拟，效率可见一斑。。 因为我懒，懒得用C++数组模拟，Python又不会，只能用java水一下这样子勉强维持生活
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-18
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-20
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            派大星
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/ACM/" class="post-category">
+                                    ACM
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/JAVA-%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">JAVA 学习</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -775,22 +842,23 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/categories/index-2.html">
+                <a href="/2020/05/18/%E5%85%A5%E9%97%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/">
                     <div class="card-image">
                         
+                        <img src="http://b-ssl.duitang.com/uploads/item/201712/27/20171227185405_85wCi.thumb.700_0.gif" class="responsive-img" alt="入门数据结构-树状数组">
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="categories">
-                        
-                        <span class="card-title">categories</span>
+                        <span class="card-title">入门数据结构-树状数组</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            前置知识：没啥好前置的，总不能是数组吧hh
+1.什么是树状数组?首先根据名字我们可以知道树状数组就是长得和树一样的数组，而且效率比直接建树要快许多，主要是写个线段树能累死老子
+2.树状数组能干什么？最准确的回答我觉得就是动态维护前缀和，而且
                         
                     </div>
                     <div class="publish-info">
@@ -799,13 +867,24 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            派大星
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/ACM/" class="post-category">
+                                    ACM
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                        <span class="chip bg-color">数据结构</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>

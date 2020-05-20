@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://no-patrick-star.github.io/"/>
-  <updated>2020-05-18T15:10:00.635Z</updated>
+  <updated>2020-05-20T04:36:00.349Z</updated>
   <id>https://no-patrick-star.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java 的 BigInteger 类</title>
+    <link href="https://no-patrick-star.github.io/2020/05/20/java-%E7%9A%84-BigInteger-%E7%B1%BB/"/>
+    <id>https://no-patrick-star.github.io/2020/05/20/java-%E7%9A%84-BigInteger-%E7%B1%BB/</id>
+    <published>2020-05-20T01:23:01.000Z</published>
+    <updated>2020-05-20T04:36:00.349Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;1-为什么要使用JAVA的BigInteger类？&quot;&gt;&lt;a href=&quot;#1-为什么要使用JAVA的BigInteger类？&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ACM" scheme="https://no-patrick-star.github.io/categories/ACM/"/>
+    
+    
+      <category term="JAVA 学习" scheme="https://no-patrick-star.github.io/tags/JAVA-%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>入门数据结构-树状数组</title>
