@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://no-patrick-star.github.io/"/>
-  <updated>2020-05-20T07:24:46.548Z</updated>
+  <updated>2020-05-20T10:57:58.428Z</updated>
   <id>https://no-patrick-star.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>大一下学期JAVA上机报告--持续更新</title>
+    <link href="https://no-patrick-star.github.io/2020/05/20/%E5%A4%A7%E4%B8%80%E4%B8%8B%E5%AD%A6%E6%9C%9FJAVA%E6%98%AF%E8%A6%81%E6%8A%A5%E5%91%8A-%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/"/>
+    <id>https://no-patrick-star.github.io/2020/05/20/%E5%A4%A7%E4%B8%80%E4%B8%8B%E5%AD%A6%E6%9C%9FJAVA%E6%98%AF%E8%A6%81%E6%8A%A5%E5%91%8A-%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</id>
+    <published>2020-05-20T10:42:46.000Z</published>
+    <updated>2020-05-20T10:57:58.428Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;实验1：熟悉JAVA开发环境&quot;&gt;&lt;a href=&quot;#实验1：熟悉JAVA开发环境&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="上机报告" scheme="https://no-patrick-star.github.io/categories/%E4%B8%8A%E6%9C%BA%E6%8A%A5%E5%91%8A/"/>
+    
+    
+      <category term="上机报告" scheme="https://no-patrick-star.github.io/tags/%E4%B8%8A%E6%9C%BA%E6%8A%A5%E5%91%8A/"/>
+    
+  </entry>
   
   <entry>
     <title>java 的 BigInteger 类</title>
