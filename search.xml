@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>水题合集</title>
+      <link href="/2020/05/21/%E6%B0%B4%E9%A2%98%E5%90%88%E9%9B%86/"/>
+      <url>/2020/05/21/%E6%B0%B4%E9%A2%98%E5%90%88%E9%9B%86/</url>
+      
+        <content type="html"><![CDATA[<h3 id="B-Vanya-and-Lanterns"><a href="#B-Vanya-and-Lanterns" class="headerlink" title="B. Vanya and Lanterns"></a>B. Vanya and Lanterns</h3><p><a href="https://codeforc.es/problemset/problem/492/B" target="_blank" rel="noopener">点击此处进入题目</a></p><h4 id="1-题意"><a href="#1-题意" class="headerlink" title="1.题意"></a>1.题意</h4><p>给你一个n，一个m，还有n个a[i] ,分别代表有n个地方有灯笼, 整条街的长度,每个灯笼所在的位置</p><h4 id="2-思路"><a href="#2-思路" class="headerlink" title="2.思路"></a>2.思路</h4><p>sort一下 比较相邻两个的最大距离然后除2 再与左端点到左边的距离，和右端点到右边的距离取一个max</p><h4 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h4><pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span><span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span><span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1010</span><span class="token punctuation">;</span><span class="token keyword">int</span> a<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token keyword">int</span> n<span class="token punctuation">,</span>m<span class="token punctuation">;</span> cin <span class="token operator">>></span> n <span class="token operator">>></span> m<span class="token punctuation">;</span>    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i <span class="token operator">++</span><span class="token punctuation">)</span> cin <span class="token operator">>></span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>    <span class="token function">sort</span><span class="token punctuation">(</span>a <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> a <span class="token operator">+</span> n <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span>  <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i <span class="token operator">++</span><span class="token punctuation">)</span> res <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> a<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%.9f\n"</span><span class="token punctuation">,</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span>res <span class="token operator">/</span> <span class="token number">2</span> <span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span><span class="token punctuation">(</span>m <span class="token operator">-</span> a<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span>a<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> CF </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 无聊时候的水题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>大一下学期JAVA上机报告--持续更新</title>
       <link href="/2020/05/20/%E5%A4%A7%E4%B8%80%E4%B8%8B%E5%AD%A6%E6%9C%9FJAVA%E6%98%AF%E8%A6%81%E6%8A%A5%E5%91%8A-%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/"/>
       <url>/2020/05/20/%E5%A4%A7%E4%B8%80%E4%B8%8B%E5%AD%A6%E6%9C%9FJAVA%E6%98%AF%E8%A6%81%E6%8A%A5%E5%91%8A-%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</url>
