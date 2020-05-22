@@ -41,7 +41,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="派大星的博客空间" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 
@@ -443,27 +444,27 @@
             <div id="articleContent">
                 <h2 id="1-为什么要使用JAVA的BigInteger类？"><a href="#1-为什么要使用JAVA的BigInteger类？" class="headerlink" title="1.为什么要使用JAVA的BigInteger类？"></a>1.为什么要使用JAVA的BigInteger类？</h2><p>因为JAVA有很完善的大数运算法则而且在ACM这种比手速的比赛，用C++数组模拟，效率可见一斑。。 <del>因为我懒，懒得用C++数组模拟，Python又不会，只能用java水一下这样子勉强维持生活</del></p>
 <h2 id="2-什么是BigInteger-类？"><a href="#2-什么是BigInteger-类？" class="headerlink" title="2.什么是BigInteger 类？"></a>2.什么是BigInteger 类？</h2><p>是JAVA的大整数类运算，可以实现加减乘除等基本运算</p>
-<h2 id="3-JAVA-BigInteger类-内容的详细介绍"><a href="#3-JAVA-BigInteger类-内容的详细介绍" class="headerlink" title="3.JAVA BigInteger类 内容的详细介绍"></a>3.JAVA BigInteger类 内容的详细介绍</h2><h3 id="1-从定义开始"><a href="#1-从定义开始" class="headerlink" title="1.从定义开始"></a>1.从定义开始</h3><h4 id="（1）常见的函数"><a href="#（1）常见的函数" class="headerlink" title="（1）常见的函数"></a>（1）常见的函数</h4><pre class=" language-java"><code class="language-java">BigInteger A  <span class="token operator">=</span> BigInteger<span class="token punctuation">.</span>ZERO
+<h2 id="3-JAVA-BigInteger类-内容的详细介绍"><a href="#3-JAVA-BigInteger类-内容的详细介绍" class="headerlink" title="3.JAVA BigInteger类 内容的详细介绍"></a>3.JAVA BigInteger类 内容的详细介绍</h2><h3 id="1-从定义开始"><a href="#1-从定义开始" class="headerlink" title="1.从定义开始"></a>1.从定义开始</h3><h4 id="（1）常见的函数"><a href="#（1）常见的函数" class="headerlink" title="（1）常见的函数"></a>（1）常见的函数</h4><pre class="line-numbers language-java"><code class="language-java">BigInteger A  <span class="token operator">=</span> BigInteger<span class="token punctuation">.</span>ZERO
 BigInteger B  <span class="token operator">=</span> BigInteger<span class="token punctuation">.</span>ONE
 BigInteger C  <span class="token operator">=</span> BigInteger<span class="token punctuation">.</span>TWO
-BigInteger D  <span class="token operator">=</span> BigInteger<span class="token punctuation">.</span>TEN</code></pre>
+BigInteger D  <span class="token operator">=</span> BigInteger<span class="token punctuation">.</span>TEN<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h4 id="（2）具体解释"><a href="#（2）具体解释" class="headerlink" title="（2）具体解释"></a>（2）具体解释</h4><p>1.valueOf(); 强转类型</p>
 <p>比如</p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
 
 BigInteger b <span class="token operator">=</span> BigInteger<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-b <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span></code></pre>
+b <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>再比如</p>
-<pre class=" language-java"><code class="language-java">String s <span class="token operator">=</span> <span class="token string">" 12345"</span><span class="token punctuation">;</span>
+<pre class="line-numbers language-java"><code class="language-java">String s <span class="token operator">=</span> <span class="token string">" 12345"</span><span class="token punctuation">;</span>
 
 BigInteger c <span class="token operator">=</span> BigInteger<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-c <span class="token operator">=</span> <span class="token number">12345</span></code></pre>
+c <span class="token operator">=</span> <span class="token number">12345</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>2.add(); 大整数相加</p>
-<pre class=" language-java"><code class="language-java">BigInteger a<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span>“<span class="token number">23</span>”<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<pre class="line-numbers language-java"><code class="language-java">BigInteger a<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span>“<span class="token number">23</span>”<span class="token punctuation">)</span><span class="token punctuation">;</span>
 BigInteger b<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">BigInteger</span><span class="token punctuation">(</span>“<span class="token number">34</span>”<span class="token punctuation">)</span><span class="token punctuation">;</span>
-a<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+a<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>3.subtract()； 相减</p>
 <p>4.multiply(); 相乘</p>
 <p>5.divide(); 相除取整</p>
@@ -481,7 +482,7 @@ a<span class="token punctuation">.</span><span class="token function">add</span>
 <p>一般用到以下两种：<br>BigInteger(String val);<br>将指定字符串转换为十进制表示形式；<br>BigInteger(String val,int radix);<br>将指定基数的 BigInteger 的字符串表示形式转换为 BigInteger</p>
 <h3 id="2-补充"><a href="#2-补充" class="headerlink" title="2.补充"></a>2.补充</h3><p>a=a.pow(b);   //a = a的b次方<br>a=a.stripTrailingZeros();   //去掉后导0<br>d=a.toPlainString();   //不让其变成科学计数法的表示法，变成一般的小数表示<br>if(d.charAt(0)==’0’)  d=d.substring(1);  //与前导的字符串比较<br>if(s.startsWith(“0.”))  s=s.substring(1);  //与前导的字符串比较<br>and();  // 例如a.and(b),计算a&amp;b<br>doubleValue();  //转化为double类型<br>longValue();  //转化为long类型<br>floatValue();  // 转化为float类型<br>intValue();  //转化为int类型<br>divideAndRemainder(BigInteger val)<br>//返回包含 (this / val) 后跟 (this % val) 的两个 BigInteger 的数组。<br>boolean isProbablePrime(BigInteger n)  //判断大数是否为素数<br>modPow(BigInteger n, BigInteger mod)  //计算this^n % mod<br>nextProbablePrime(BigInteger n) //返回比大数n大的为素数的数<br>not()  //计算 ~this<br>or(BigInteger a)  //计算this|a<br>xor(BigInteger val)  //返回其值为 (this ^ val) 的 BigInteger。<br>probablePrime(int bitLength, Random rnd)<br>//返回有可能是素数的、具有指定长度的正 BigInteger。<br>shiftLeft(int n)  //返回其值为 (this &lt;&lt; n) 的 BigInteger。<br>shiftRight(int n) //返回其值为 (this &gt;&gt; n) 的 BigInteger。</p>
 <h3 id="3-例题"><a href="#3-例题" class="headerlink" title="3.例题"></a>3.例题</h3><h4 id="1-用JAVA求一个1-n-阶乘和"><a href="#1-用JAVA求一个1-n-阶乘和" class="headerlink" title="1.用JAVA求一个1 ~ n 阶乘和"></a>1.用JAVA求一个1 ~ n 阶乘和</h4><p>Code:</p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">package</span> HomeWork1<span class="token punctuation">;</span>
+<pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> HomeWork1<span class="token punctuation">;</span>
 
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>math<span class="token punctuation">.</span>BigInteger<span class="token punctuation">;</span>
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Scanner<span class="token punctuation">;</span>
@@ -501,8 +502,8 @@ a<span class="token punctuation">.</span><span class="token function">add</span>
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-</code></pre>
-<h4 id="2-求一个斐波那契数列"><a href="#2-求一个斐波那契数列" class="headerlink" title="2.求一个斐波那契数列"></a>2.求一个斐波那契数列</h4><pre class=" language-java"><code class="language-java"><span class="token keyword">package</span> HomeWork1<span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="2-求一个斐波那契数列"><a href="#2-求一个斐波那契数列" class="headerlink" title="2.求一个斐波那契数列"></a>2.求一个斐波那契数列</h4><pre class="line-numbers language-java"><code class="language-java"><span class="token keyword">package</span> HomeWork1<span class="token punctuation">;</span>
 
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>math<span class="token punctuation">.</span>BigInteger<span class="token punctuation">;</span>
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Scanner<span class="token punctuation">;</span>
@@ -530,7 +531,7 @@ a<span class="token punctuation">.</span><span class="token function">add</span>
         <span class="token keyword">int</span> m <span class="token operator">=</span> cin<span class="token punctuation">.</span><span class="token function">nextInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"fib第m项的和为 : "</span><span class="token operator">+</span> fib<span class="token punctuation">[</span>m<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>

@@ -41,7 +41,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="派大星的博客空间" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 
@@ -444,7 +445,7 @@
                 <h3 id="1-Vanya-and-Lanterns"><a href="#1-Vanya-and-Lanterns" class="headerlink" title="1. Vanya and Lanterns"></a>1. Vanya and Lanterns</h3><p><a href="https://codeforc.es/problemset/problem/492/B" target="_blank" rel="noopener">题目传送门</a></p>
 <h4 id="1-题意"><a href="#1-题意" class="headerlink" title="1.题意"></a>1.题意</h4><p>给你一个n，一个m，还有n个a[i] ,分别代表有n个地方有灯笼, 整条街的长度,每个灯笼所在的位置</p>
 <h4 id="2-思路"><a href="#2-思路" class="headerlink" title="2.思路"></a>2.思路</h4><p>sort一下 比较相邻两个的最大距离然后除2 再与左端点到左边的距离，和右端点到右边的距离取一个max</p>
-<h4 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h4><pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
+<h4 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h4><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
 
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
@@ -462,11 +463,11 @@
     <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span>  <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i <span class="token operator">++</span><span class="token punctuation">)</span> res <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> a<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%.9f\n"</span><span class="token punctuation">,</span> <span class="token function">max</span><span class="token punctuation">(</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span>res <span class="token operator">/</span> <span class="token number">2</span> <span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span><span class="token punctuation">(</span>m <span class="token operator">-</span> a<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span>a<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="2-Phoenix-and-Beauty"><a href="#2-Phoenix-and-Beauty" class="headerlink" title="2. Phoenix and Beauty"></a>2. Phoenix and Beauty</h3><p><a href="https://codeforc.es/problemset/problem/1348/B" target="_blank" rel="noopener">题目传送门</a></p>
 <h4 id="1-题意-1"><a href="#1-题意-1" class="headerlink" title="1.题意"></a>1.题意</h4><p>给你一个n和k，还有n个a[i]；你需要往数组所形成的序列里面添加数，使得长度为k的任意子序列的和相等，但没有要求使用最优方案</p>
 <h4 id="2-思路-1"><a href="#2-思路-1" class="headerlink" title="2.思路"></a>2.思路</h4><p>set存储，我们要把已经存在的数直接扩展n个k; 先用一个set存要输入的数，如果set的长度大于k了，那么一定是不合法的；当长度小于k时，我们随便把一些1~n中不存在set里面的数直接放进入set，直到n == k，然后我们直接输出n次set就OK了</p>
-<h4 id="3-代码-1"><a href="#3-代码-1" class="headerlink" title="3.代码"></a>3.代码</h4><pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
+<h4 id="3-代码-1"><a href="#3-代码-1" class="headerlink" title="3.代码"></a>3.代码</h4><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
 
 <span class="token macro property">#<span class="token directive keyword">define</span> x first</span>
 <span class="token macro property">#<span class="token directive keyword">define</span> y second</span>
@@ -528,11 +529,11 @@ set<span class="token operator">&lt;</span><span class="token keyword">int</span
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 
 <span class="token punctuation">}</span>
-</code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="3-Skier"><a href="#3-Skier" class="headerlink" title="3.Skier"></a>3.Skier</h3><p><a href="https://codeforc.es/contest/1351/problem/C" target="_blank" rel="noopener">题目传送门</a></p>
 <h4 id="1-题意-2"><a href="#1-题意-2" class="headerlink" title="1.题意"></a>1.题意</h4><p>给你四个方向分别表示东南西北，初始点为0，然后你根据他给的字符串的方向走，每次走相同的一段距离，如果这条路走过就用时1s，如果没被走过就需要5s，问你总共需要多少秒</p>
 <h4 id="2-思路-2"><a href="#2-思路-2" class="headerlink" title="2.思路"></a>2.思路</h4><p>两个点确定一条线段，mp直接记录两个点，上一个点到现在所在点是否被标记过，被标记过res + 1 ，否则 res + 5；提示：题目可能出现环的情况比如 NESWN 之后后就出现环了 很操蛋</p>
-<h4 id="3-代码-2"><a href="#3-代码-2" class="headerlink" title="3.代码"></a>3.代码</h4><pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
+<h4 id="3-代码-2"><a href="#3-代码-2" class="headerlink" title="3.代码"></a>3.代码</h4><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
 
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
@@ -587,12 +588,12 @@ map<span class="token operator">&lt;</span>pair<span class="token operator">&lt;
 
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h4 id="4-总结"><a href="#4-总结" class="headerlink" title="4.总结"></a>4.总结</h4><p>第一次用四个key值的map，很涨见识，感谢大佬</p>
 <h3 id="4-Game-With-Array"><a href="#4-Game-With-Array" class="headerlink" title="4.Game With Array"></a>4.Game With Array</h3><p><a href="https://codeforc.es/problemset/problem/1355/D" target="_blank" rel="noopener">题目传送门</a></p>
 <h4 id="1-题意-3"><a href="#1-题意-3" class="headerlink" title="1.题意"></a>1.题意</h4><p>给你一个n,s；构造一个长度为n和为s的序列，然后选出一个 k (0 &lt; k &lt;= s) ,使得任意非空的子序列的和为k或者s - k; 如果这样的数组存在则输出”YES”并且打印这个数组和所选的k；否则输出”NO”</p>
 <h4 id="2-思路-3"><a href="#2-思路-3" class="headerlink" title="2.思路"></a>2.思路</h4><p>反正就是CF的题 你就流氓着做呗，他说啥你别信，也别死磕样例，就走非常人的想法。构造一个前n - 1项全为1的序列。 如果最后一项大于n ，那么 k == n 一定成立，输出这个序列就好了</p>
-<h4 id="3-代码-3"><a href="#3-代码-3" class="headerlink" title="3.代码"></a>3.代码</h4><pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
+<h4 id="3-代码-3"><a href="#3-代码-3" class="headerlink" title="3.代码"></a>3.代码</h4><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
 
 <span class="token macro property">#<span class="token directive keyword">define</span> x first</span>
 <span class="token macro property">#<span class="token directive keyword">define</span> y second</span>
@@ -628,12 +629,12 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
 
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="5-Alice-Bob-and-Candies"><a href="#5-Alice-Bob-and-Candies" class="headerlink" title="5.Alice, Bob and Candies"></a>5.Alice, Bob and Candies</h3><p><a href="https://codeforc.es/problemset/problem/1352/D" target="_blank" rel="noopener">题目传送门</a></p>
 <p>PS：这题真的搞我心态啊。当时怎么写都不对，后来换了种写法立马就过了 我吐了</p>
 <h4 id="1-题意-4"><a href="#1-题意-4" class="headerlink" title="1.题意"></a>1.题意</h4><p>就两个二逼，娘们在左边，爷们在右边，就NM对着吃，然后女士先开始，要求两个二逼每一步吃的都不小于对方上一次吃的，就这样模拟</p>
 <h4 id="2-思路-4"><a href="#2-思路-4" class="headerlink" title="2.思路"></a>2.思路</h4><p>比这题意模拟</p>
-<h4 id="3-代码-4"><a href="#3-代码-4" class="headerlink" title="3.代码"></a>3.代码</h4><pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
+<h4 id="3-代码-4"><a href="#3-代码-4" class="headerlink" title="3.代码"></a>3.代码</h4><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
 
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
@@ -679,11 +680,11 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
         cout <span class="token operator">&lt;&lt;</span> cnt  <span class="token operator">-</span> <span class="token number">1</span><span class="token operator">&lt;&lt;</span> <span class="token string">' '</span> <span class="token operator">&lt;&lt;</span> res1 <span class="token operator">&lt;&lt;</span><span class="token string">' '</span> <span class="token operator">&lt;&lt;</span> res2 <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="6-Special-Permutation"><a href="#6-Special-Permutation" class="headerlink" title="6.Special Permutation"></a>6.Special Permutation</h3><p><a href="https://codeforc.es/problemset/problem/1352/G" target="_blank" rel="noopener">题目传送门</a></p>
 <h4 id="1-题意-5"><a href="#1-题意-5" class="headerlink" title="1.题意"></a>1.题意</h4><p>构造一个序列 然后 前一项减后一项的的绝对值在2 - 4 之间</p>
 <h4 id="2-解法"><a href="#2-解法" class="headerlink" title="2.解法"></a>2.解法</h4><p>我是弱智，先从大到小把 1 ~ n 的奇数输出出来，然后输出一下 4 2 然后从六开始输出偶数就完了，在纸上写一下还是非常有必要的，哎</p>
-<h4 id="3-代码-5"><a href="#3-代码-5" class="headerlink" title="3.代码"></a>3.代码</h4><pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
+<h4 id="3-代码-5"><a href="#3-代码-5" class="headerlink" title="3.代码"></a>3.代码</h4><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
 
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 <span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1010</span><span class="token punctuation">;</span>
@@ -707,7 +708,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
             cout <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>

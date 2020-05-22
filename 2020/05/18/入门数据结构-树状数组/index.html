@@ -41,7 +41,8 @@
     <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="派大星的博客空间" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 
@@ -471,29 +472,29 @@
 <p><strong>即为上面列出的式子</strong></p>
 <p><img src="https://img-blog.csdn.net/20180625081222737?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Jlc3Rzb3J0/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt=""></p>
 <p><strong>很容易得出上面的2^k就等于lowbit(k)</strong></p>
-<pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">lowbit</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">lowbit</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
   <span class="token keyword">return</span> x <span class="token operator">&amp;</span> <span class="token operator">-</span>x<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="单点更新："><a href="#单点更新：" class="headerlink" title="单点更新："></a><strong>单点更新：</strong></h2><p>1(001) C[1] += A[1];</p>
 <p>lowbit(1) = 001; 1 + lowbit(1) = 2(010)  C[2] += A[1];</p>
 <p>lowbit(2) = 010; 2 + lowbit(2) = 4(100)  C[4] += A[1];</p>
 <p>lowbit(4) = 100; 4 + lowbit(4) = 8(1000) C[8] += A[1];</p>
 <p>Code:</p>
-<pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span><span class="token keyword">int</span> c<span class="token punctuation">)</span>
+<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span><span class="token keyword">int</span> c<span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
   <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> x<span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i <span class="token operator">+</span><span class="token operator">=</span><span class="token function">lowbit</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span> C<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span><span class="token operator">=</span> c<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="区间查询："><a href="#区间查询：" class="headerlink" title="区间查询："></a><strong>区间查询：</strong></h2><p>比如 i = 5；<br>C[4] = A[1] + A[2] + A[3] + A[4];<br>C[5] = A[5];</p>
 <p>可以推出：sum(101) = C[(100)] + C[(101)];<br>第一次101，减去最低位的1就是100;<br>Code:</p>
-<pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span>
+<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
   <span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
   <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> x <span class="token punctuation">;</span> i <span class="token punctuation">;</span> i <span class="token operator">-</span><span class="token operator">=</span> <span class="token function">lowbit</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span> res <span class="token operator">+</span><span class="token operator">=</span> C<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
   <span class="token keyword">return</span> res<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>根据上面的操作就可以解决一个简单的树状数组问题了，<del>这个题目也可以用线段树做，但是太操蛋了写起来太操蛋了</del>;</strong><br><a href="https://vjudge.net/problem/HDU-1166" target="_blank" rel="noopener">点击此处进入题目</a></p>
-<pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
+<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
 <span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;cstring></span></span>
 <span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;cstdio></span></span>
 <span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;algorithm></span></span>
@@ -542,11 +543,11 @@
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="区间修改-单点查询"><a href="#区间修改-单点查询" class="headerlink" title="区间修改+单点查询"></a><strong>区间修改+单点查询</strong></h2><p><strong>通过上文讲到的”差分”，可以把这个问题转换为最开始树状数组所能执行的操作了</strong></p>
 <h3 id="修改"><a href="#修改" class="headerlink" title="修改"></a><strong>修改</strong></h3><p><strong>设 d[] 为a的差分<br>就比如你给<code>[l,r]</code>都加上x的时候，根据差分定义 a[l] + x , a[r + 1] - x 就相当于区间加了一个x;</strong>;</p>
 <p><strong>直接上题吧还是</strong><br><a href="https://www.acwing.com/problem/content/248/" target="_blank" rel="noopener">点击此处进入题目</a>;<br>Code:</p>
-<pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
+<pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
 
 <span class="token macro property">#<span class="token directive keyword">define</span> int long long</span>
 
@@ -594,7 +595,7 @@
             <span class="token function">add</span><span class="token punctuation">(</span>l <span class="token punctuation">,</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token function">add</span><span class="token punctuation">(</span>r <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">-</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="区间查询-区间修改"><a href="#区间查询-区间修改" class="headerlink" title="区间查询+区间修改"></a><strong>区间查询+区间修改</strong></h2><p><strong>老子宁愿操个线段树也不愿想</strong></p>
 <h2 id="二维树状数组"><a href="#二维树状数组" class="headerlink" title="二维树状数组"></a><strong>二维树状数组</strong></h2><p><strong>我还不会也不想学有机会再补吧</strong></p>
 
