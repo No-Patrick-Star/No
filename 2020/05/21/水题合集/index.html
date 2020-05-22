@@ -419,14 +419,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    8 分
                 </div>
                 
 
@@ -679,6 +679,34 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
         cout <span class="token operator">&lt;&lt;</span> cnt  <span class="token operator">-</span> <span class="token number">1</span><span class="token operator">&lt;&lt;</span> <span class="token string">' '</span> <span class="token operator">&lt;&lt;</span> res1 <span class="token operator">&lt;&lt;</span><span class="token string">' '</span> <span class="token operator">&lt;&lt;</span> res2 <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="6-Special-Permutation"><a href="#6-Special-Permutation" class="headerlink" title="6.Special Permutation"></a>6.Special Permutation</h3><p><a href="https://codeforc.es/problemset/problem/1352/G" target="_blank" rel="noopener">题目传送门</a></p>
+<h4 id="1-题意-5"><a href="#1-题意-5" class="headerlink" title="1.题意"></a>1.题意</h4><p>构造一个序列 然后 前一项减后一项的的绝对值在2 - 4 之间</p>
+<h4 id="2-解法"><a href="#2-解法" class="headerlink" title="2.解法"></a>2.解法</h4><p>我是弱智，先从大到小把 1 ~ n 的奇数输出出来，然后输出一下 4 2 然后从六开始输出偶数就完了，在纸上写一下还是非常有必要的，哎</p>
+<h4 id="3-代码-5"><a href="#3-代码-5" class="headerlink" title="3.代码"></a>3.代码</h4><pre class=" language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1010</span><span class="token punctuation">;</span>
+<span class="token keyword">bool</span> st<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> t<span class="token punctuation">;</span> cin <span class="token operator">>></span> t<span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>t <span class="token operator">--</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> n<span class="token punctuation">;</span> cin <span class="token operator">>></span> n<span class="token punctuation">;</span>
+        <span class="token function">memset</span><span class="token punctuation">(</span>st<span class="token punctuation">,</span><span class="token boolean">false</span><span class="token punctuation">,</span><span class="token keyword">sizeof</span> st<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>n <span class="token operator">&lt;=</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token function">puts</span><span class="token punctuation">(</span><span class="token string">"-1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">else</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> n <span class="token punctuation">;</span> i <span class="token operator">>=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">--</span><span class="token punctuation">)</span> <span class="token keyword">if</span><span class="token punctuation">(</span> i <span class="token operator">&amp;</span> <span class="token number">1</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> i  <span class="token operator">&lt;&lt;</span><span class="token string">' '</span><span class="token punctuation">;</span>
+            cout <span class="token operator">&lt;&lt;</span> <span class="token number">4</span> <span class="token operator">&lt;&lt;</span> <span class="token string">' '</span> <span class="token operator">&lt;&lt;</span> <span class="token number">2</span> <span class="token operator">&lt;&lt;</span> <span class="token string">' '</span><span class="token punctuation">;</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">6</span> <span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i <span class="token operator">+</span><span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">)</span> cout <span class="token operator">&lt;&lt;</span> i <span class="token operator">&lt;&lt;</span><span class="token string">' '</span><span class="token punctuation">;</span>
+
+            cout <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
 
             </div>
@@ -1476,7 +1504,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">5.7k</span>&nbsp;字
+                class="white-color">5.9k</span>&nbsp;字
             
             
             
