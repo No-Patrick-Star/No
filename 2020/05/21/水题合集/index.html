@@ -413,21 +413,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-22
+                    2020-05-24
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.9k
+                    2.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    9 分
+                    11 分
                 </div>
                 
 
@@ -767,6 +767,60 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="8-Sequence-with-Digits"><a href="#8-Sequence-with-Digits" class="headerlink" title="8.Sequence with Digits"></a>8.<a href="https://codeforces.com/problemset/problem/1355/A" target="_blank" rel="noopener">Sequence with Digits</a></h3><h4 id="1-题意-7"><a href="#1-题意-7" class="headerlink" title="1.题意"></a>1.题意</h4><p>给你一个n和k，然后求出n通过k次变化所能形成的数</p>
+<p><img src="https://img-blog.csdnimg.cn/2020051622474028.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzNjkwNDU0,size_16,color_FFFFFF,t_70" alt=""></p>
+<p>就根据上图的变化规则</p>
+<h4 id="2-思路-6"><a href="#2-思路-6" class="headerlink" title="2.思路"></a>2.思路</h4><p>数据范围很大直接枚举K次一定是错的联想之前做个的一个快乐数，我有了打表的想法</p>
+<p><img src="https://img-blog.csdnimg.cn/20200524015738952.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODA4MDY1,size_16,color_FFFFFF,t_70" alt="">))</p>
+<p>很明显的我们可以到当出现一个0的时候结果就不会再变化了，所以就可以break直接输出答案了，打表天下第一</p>
+<h4 id="3-代码-7"><a href="#3-代码-7" class="headerlink" title="3.代码"></a>3.代码</h4><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
+
+<span class="token macro property">#<span class="token directive keyword">define</span> int long long</span>
+<span class="token macro property">#<span class="token directive keyword">define</span> x first</span>
+<span class="token macro property">#<span class="token directive keyword">define</span> y second</span>
+<span class="token macro property">#<span class="token directive keyword">define</span> PII pair&lt;int,int></span>
+<span class="token macro property">#<span class="token directive keyword">define</span> LL long long</span>
+<span class="token macro property">#<span class="token directive keyword">define</span> pb push_back</span>
+<span class="token macro property">#<span class="token directive keyword">define</span> pqp priority_queue&lt;PII,vector&lt;PII>,greater&lt;PII>></span>
+<span class="token macro property">#<span class="token directive keyword">define</span> pqi priority_queue&lt;int,vector&lt;int>,greater&lt;int>></span>
+<span class="token macro property">#<span class="token directive keyword">define</span> PSS pair&lt;string,string></span>
+<span class="token macro property">#<span class="token directive keyword">define</span> in insert</span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> e<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> dist<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> book<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span>book2<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> dx<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">=</span>  <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">,</span>dy<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">=</span> <span class="token punctuation">{</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">,</span>dz<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">signed</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    ios_base<span class="token operator">::</span><span class="token function">sync_with_stdio</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> cin<span class="token punctuation">.</span><span class="token function">tie</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> t<span class="token punctuation">;</span> cin <span class="token operator">>></span> t<span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>t <span class="token operator">--</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">int</span> n<span class="token punctuation">,</span>k<span class="token punctuation">;</span> cin <span class="token operator">>></span> n <span class="token operator">>></span> k<span class="token punctuation">;</span>
+        <span class="token keyword">int</span> res <span class="token operator">=</span> n<span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">;</span> i <span class="token operator">&lt;</span> k<span class="token punctuation">;</span> i <span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token keyword">int</span> minx <span class="token operator">=</span> <span class="token number">10</span> <span class="token punctuation">,</span> maxs <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token keyword">while</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                minx <span class="token operator">=</span> <span class="token function">min</span><span class="token punctuation">(</span>minx <span class="token punctuation">,</span> n <span class="token operator">%</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                maxs <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>maxs <span class="token punctuation">,</span> n <span class="token operator">%</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                n  <span class="token operator">/</span><span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            res <span class="token operator">=</span> res <span class="token operator">+</span> minx <span class="token operator">*</span> maxs<span class="token punctuation">;</span>
+            n <span class="token operator">=</span> res<span class="token punctuation">;</span>
+
+            <span class="token keyword">if</span><span class="token punctuation">(</span>minx <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">||</span> maxs <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        cout <span class="token operator">&lt;&lt;</span> res <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
             </div>
             <hr/>
@@ -1629,7 +1683,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">9.3k</span>&nbsp;字
+                class="white-color">9.6k</span>&nbsp;字
             
             
             

@@ -413,7 +413,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-23
+                    2020-05-24
                 </div>
                 
 
@@ -538,7 +538,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
 <h3 id="C-序列卷积之和"><a href="#C-序列卷积之和" class="headerlink" title="C.序列卷积之和"></a>C.序列卷积之和</h3><p><a href="https://ac.nowcoder.com/acm/contest/5633/C" target="_blank" rel="noopener">题目传送门</a></p>
 <h4 id="1-题意-2"><a href="#1-题意-2" class="headerlink" title="1.题意"></a>1.题意</h4><p>进入题目查看吧</p>
 <h4 id="2-思路-2"><a href="#2-思路-2" class="headerlink" title="2.思路"></a>2.思路</h4><p>打表找规律，毕竟数论嘛，我也只会打表</p>
-<p><img src="C:%5CUsers%5C10641%5CDesktop%5CTB$APM%7DOL0DP76QC%5DD9E97W.png" alt=""> </p>
+<p><img src="https://img-blog.csdnimg.cn/20200524015722364.png" alt="">))</p>
 <p>可以很清晰的看出 a[i] * a[j] 出现了几次，但是因为时间复杂度我们不能直接暴力 n^2 的去求每一个a[i] * a[j]；</p>
 <p>所以我们转化一下思想，做一个前缀和  s[i] = s[i - 1]  + a[i]*(n -  i  +1)  分表表示第几个数在第一次乘的时候出现的次数，然后当我们枚举 第a[i] 的时候我们便可以直接 乘上数字 (s[n]  - s[i -  1]) * i (根据打表的规律可以很清楚的看出来); 所以最后的res 就是为  res  += a[i] *  (s[n]  - s[i  -1]) * i ,  很恶心那个去摸，要注意出现负数的情况 很nm恶心</p>
 <h4 id="3-代码-2"><a href="#3-代码-2" class="headerlink" title="3.代码"></a>3.代码</h4><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;bits/stdc++.h></span></span>
@@ -1450,7 +1450,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">9.3k</span>&nbsp;字
+                class="white-color">9.6k</span>&nbsp;字
             
             
             
