@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://no-patrick-star.github.io/"/>
-  <updated>2020-05-23T02:57:28.556Z</updated>
+  <updated>2020-05-23T07:16:00.300Z</updated>
   <id>https://no-patrick-star.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>牛客小白月赛25</title>
+    <link href="https://no-patrick-star.github.io/2020/05/23/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%99%BD%E6%9C%88%E8%B5%9B25/"/>
+    <id>https://no-patrick-star.github.io/2020/05/23/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%99%BD%E6%9C%88%E8%B5%9B25/</id>
+    <published>2020-05-23T03:00:46.000Z</published>
+    <updated>2020-05-23T07:16:00.300Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;A-AOE还是单体？&quot;&gt;&lt;a href=&quot;#A-AOE还是单体？&quot; class=&quot;headerlink&quot; title=&quot;A. AOE还是单体？&quot;&gt;&lt;/a&gt;A.&lt;a href=&quot;https://ac.nowcoder.com/acm/contest/5600/A&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>牛客练习赛64</title>
