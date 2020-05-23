@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://no-patrick-star.github.io/"/>
-  <updated>2020-05-23T07:16:00.300Z</updated>
+  <updated>2020-05-23T17:17:33.896Z</updated>
   <id>https://no-patrick-star.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://no-patrick-star.github.io/2020/05/23/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%99%BD%E6%9C%88%E8%B5%9B25/"/>
     <id>https://no-patrick-star.github.io/2020/05/23/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%99%BD%E6%9C%88%E8%B5%9B25/</id>
     <published>2020-05-23T03:00:46.000Z</published>
-    <updated>2020-05-23T07:16:00.300Z</updated>
+    <updated>2020-05-23T17:17:33.896Z</updated>
     
     <summary type="html">
     
@@ -36,6 +36,10 @@
     </summary>
     
     
+      <category term="ACM" scheme="https://no-patrick-star.github.io/categories/ACM/"/>
+    
+    
+      <category term="牛客" scheme="https://no-patrick-star.github.io/tags/%E7%89%9B%E5%AE%A2/"/>
     
   </entry>
   
