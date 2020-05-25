@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://no-patrick-star.github.io/"/>
-  <updated>2020-05-23T17:17:33.896Z</updated>
+  <updated>2020-05-25T13:16:04.147Z</updated>
   <id>https://no-patrick-star.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Codeforces Round #644 (Div. 3)</title>
+    <link href="https://no-patrick-star.github.io/2020/05/25/Codeforces-Round-644-Div-3/"/>
+    <id>https://no-patrick-star.github.io/2020/05/25/Codeforces-Round-644-Div-3/</id>
+    <published>2020-05-25T05:44:48.000Z</published>
+    <updated>2020-05-25T13:16:04.147Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;A-Minimal-Square&quot;&gt;&lt;a href=&quot;#A-Minimal-Square&quot; class=&quot;headerlink&quot; title=&quot;A.Minimal Square&quot;&gt;&lt;/a&gt;A.&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ACM" scheme="https://no-patrick-star.github.io/categories/ACM/"/>
+    
+    
+      <category term="codeforces" scheme="https://no-patrick-star.github.io/tags/codeforces/"/>
+    
+  </entry>
   
   <entry>
     <title>牛客小白月赛25</title>
