@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>派大星的博客空间</title>
+  <title>派大星</title>
   
-  <subtitle>派大星</subtitle>
+  <subtitle>你后悔选择了ACM嘛？</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://no-patrick-star.github.io/"/>
