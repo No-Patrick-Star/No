@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://no-patrick-star.github.io/"/>
-  <updated>2020-05-27T02:23:58.903Z</updated>
+  <updated>2020-05-29T10:21:35.066Z</updated>
   <id>https://no-patrick-star.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Educational Codeforces Round 88 (Rated for Div. 2)</title>
+    <link href="https://no-patrick-star.github.io/2020/05/29/Educational-Codeforces-Round-88-Rated-for-Div-2/"/>
+    <id>https://no-patrick-star.github.io/2020/05/29/Educational-Codeforces-Round-88-Rated-for-Div-2/</id>
+    <published>2020-05-29T08:05:54.000Z</published>
+    <updated>2020-05-29T10:21:35.066Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;A-Berland-Poker&quot;&gt;&lt;a href=&quot;#A-Berland-Poker&quot; class=&quot;headerlink&quot; title=&quot;A.Berland Poker&quot;&gt;&lt;/a&gt;A.&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ACM" scheme="https://no-patrick-star.github.io/categories/ACM/"/>
+    
+    
+      <category term="codeforces" scheme="https://no-patrick-star.github.io/tags/codeforces/"/>
+    
+  </entry>
   
   <entry>
     <title>Codeforces Round #645 (Div. 2)</title>
