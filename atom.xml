@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://no-patrick-star.github.io/"/>
-  <updated>2020-05-30T06:33:46.659Z</updated>
+  <updated>2020-06-13T04:33:46.932Z</updated>
   <id>https://no-patrick-star.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>BH</title>
+    <link href="https://no-patrick-star.github.io/2020/06/13/BH/"/>
+    <id>https://no-patrick-star.github.io/2020/06/13/BH/</id>
+    <published>2020-06-13T04:25:30.000Z</published>
+    <updated>2020-06-13T04:33:46.932Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;一-冒险者&quot;&gt;&lt;a href=&quot;#一-冒险者&quot; class=&quot;headerlink&quot; title=&quot;一. 冒险者&quot;&gt;&lt;/a&gt;一.&lt;a href=&quot;https://ac.nowcoder.com/acm/contest/5761/F&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ACM" scheme="https://no-patrick-star.github.io/categories/ACM/"/>
+    
+    
+      <category term="ACM" scheme="https://no-patrick-star.github.io/tags/ACM/"/>
+    
+  </entry>
   
   <entry>
     <title>线段树各种操作模板</title>
