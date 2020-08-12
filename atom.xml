@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://no-patrick-star.github.io/"/>
-  <updated>2020-06-13T04:35:00.830Z</updated>
+  <updated>2020-08-12T17:19:31.162Z</updated>
   <id>https://no-patrick-star.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网络流</title>
+    <link href="https://no-patrick-star.github.io/2020/08/13/%E7%BD%91%E7%BB%9C%E6%B5%81/"/>
+    <id>https://no-patrick-star.github.io/2020/08/13/%E7%BD%91%E7%BB%9C%E6%B5%81/</id>
+    <published>2020-08-12T16:52:57.000Z</published>
+    <updated>2020-08-12T17:19:31.162Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;1-基本概念&quot;&gt;&lt;a href=&quot;#1-基本概念&quot; class=&quot;headerlink&quot; title=&quot;1.基本概念&quot;&gt;&lt;/a&gt;1.基本概念&lt;/h2&gt;&lt;h3 id=&quot;1-1-流网络，不考虑反向边&quot;&gt;&lt;a href=&quot;#1-1-流网络，不考虑反向边&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="图论" scheme="https://no-patrick-star.github.io/categories/%E5%9B%BE%E8%AE%BA/"/>
+    
+    
+      <category term="最大流" scheme="https://no-patrick-star.github.io/tags/%E6%9C%80%E5%A4%A7%E6%B5%81/"/>
+    
+  </entry>
   
   <entry>
     <title>BH</title>
