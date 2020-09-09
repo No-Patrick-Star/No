@@ -296,7 +296,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/4.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/3.jpg)');
 </script>
 
 
@@ -312,7 +312,7 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">12</a></span>
+    <span class="count"><a href="/">14</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -342,7 +342,7 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">12</a></span>
+    <span class="count"><a href="/">14</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -490,7 +490,7 @@
         },
         xAxis: {
             type: 'category',
-            data: ["2019-08","2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08"]
+            data: ["2019-09","2019-10","2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09"]
         },
         yAxis: {
             type: 'value',
@@ -500,7 +500,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,10,1,0,1],
+                data: [0,0,0,0,0,0,0,0,10,1,0,3,0],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -542,7 +542,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"ACM","value":9},{"name":"水题","value":1},{"name":"上机报告","value":1},{"name":"图论","value":1}],
+                data: [{"name":"ACM","value":10},{"name":"水题","value":1},{"name":"上机报告","value":1},{"name":"图论","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -566,7 +566,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["codeforces","牛客","ACM","CF","JAVA 学习","数据结构","无聊时候的水题","上机报告","线段树","最大流"]
+                data: ["ACM","codeforces","牛客","无聊时候的水题","数据结构","上机报告","CF","JAVA 学习","线段树","最大流"]
             }
         ],
         yAxis: [
@@ -579,7 +579,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [2,2,1,1,1,1,1,1,1,1],
+                data: [2,2,2,1,1,1,1,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -755,8 +755,26 @@
             
             
             
+            <a href="/tags/%E6%97%A0%E8%81%8A%E6%97%B6%E5%80%99%E7%9A%84%E6%B0%B4%E9%A2%98/">
+                <span class="chip center-align waves-effect waves-light chip-default">无聊时候的水题</span>
+            </a>
+            
+            
+            
             <a href="/tags/codeforces/">
                 <span class="chip center-align waves-effect waves-light chip-default">codeforces</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                <span class="chip center-align waves-effect waves-light chip-default">数据结构</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E4%B8%8A%E6%9C%BA%E6%8A%A5%E5%91%8A/">
+                <span class="chip center-align waves-effect waves-light chip-default">上机报告</span>
             </a>
             
             
@@ -773,30 +791,6 @@
             
             
             
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
-                <span class="chip center-align waves-effect waves-light chip-default">数据结构</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E6%97%A0%E8%81%8A%E6%97%B6%E5%80%99%E7%9A%84%E6%B0%B4%E9%A2%98/">
-                <span class="chip center-align waves-effect waves-light chip-default">无聊时候的水题</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E7%89%9B%E5%AE%A2/">
-                <span class="chip center-align waves-effect waves-light chip-default">牛客</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E4%B8%8A%E6%9C%BA%E6%8A%A5%E5%91%8A/">
-                <span class="chip center-align waves-effect waves-light chip-default">上机报告</span>
-            </a>
-            
-            
-            
             <a href="/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/">
                 <span class="chip center-align waves-effect waves-light chip-default">线段树</span>
             </a>
@@ -805,6 +799,12 @@
             
             <a href="/tags/%E6%9C%80%E5%A4%A7%E6%B5%81/">
                 <span class="chip center-align waves-effect waves-light chip-default">最大流</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E7%89%9B%E5%AE%A2/">
+                <span class="chip center-align waves-effect waves-light chip-default">牛客</span>
             </a>
             
             
@@ -890,7 +890,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">24.6k</span>&nbsp;字
+                class="white-color">30.8k</span>&nbsp;字
             
             
             
@@ -1082,11 +1082,3 @@ $(function () {
 </body>
 
 </html>
-
-<script type="text/javascript">
-    //只在桌面版网页启用特效
-    var windowWidth = $(window).width();
-    if (windowWidth > 768) {
-        document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
-    }
-    </script>

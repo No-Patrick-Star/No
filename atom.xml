@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://no-patrick-star.github.io/"/>
-  <updated>2020-08-12T17:19:31.162Z</updated>
+  <updated>2020-09-09T08:13:28.517Z</updated>
   <id>https://no-patrick-star.github.io/</id>
   
   <author>
@@ -17,11 +17,63 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>牛客小白月赛27</title>
+    <link href="https://no-patrick-star.github.io/2020/08/23/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%99%BD%E6%9C%88%E8%B5%9B27/"/>
+    <id>https://no-patrick-star.github.io/2020/08/23/%E7%89%9B%E5%AE%A2%E5%B0%8F%E7%99%BD%E6%9C%88%E8%B5%9B27/</id>
+    <published>2020-08-23T01:11:36.000Z</published>
+    <updated>2020-09-09T08:13:28.517Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;说实话= =， 每次打小白月赛都感觉自己学了个假算法，可能是我太菜了吧hh&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;A-巨木之森&quot;&gt;&lt;a href=&quot;#A-巨木之森&quot; class=&quot;headerlink&quot; title=&quot;A. 巨木之森&quot;&gt;&lt;/a&gt;A.&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="ACM" scheme="https://no-patrick-star.github.io/categories/ACM/"/>
+    
+    
+      <category term="ACM" scheme="https://no-patrick-star.github.io/tags/ACM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>答题模板</title>
+    <link href="https://no-patrick-star.github.io/2020/08/17/%E7%AD%94%E9%A2%98%E6%A8%A1%E6%9D%BF/"/>
+    <id>https://no-patrick-star.github.io/2020/08/17/%E7%AD%94%E9%A2%98%E6%A8%A1%E6%9D%BF/</id>
+    <published>2020-08-17T13:42:24.000Z</published>
+    <updated>2020-09-09T08:13:28.518Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;基础模板&quot;&gt;&lt;a href=&quot;#基础模板&quot; class=&quot;headerlink&quot; title=&quot;基础模板&quot;&gt;&lt;/a&gt;基础模板&lt;/h2&gt;&lt;h3 id=&quot;一、基础算法&quot;&gt;&lt;a href=&quot;#一、基础算法&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>网络流</title>
     <link href="https://no-patrick-star.github.io/2020/08/13/%E7%BD%91%E7%BB%9C%E6%B5%81/"/>
     <id>https://no-patrick-star.github.io/2020/08/13/%E7%BD%91%E7%BB%9C%E6%B5%81/</id>
     <published>2020-08-12T16:52:57.000Z</published>
-    <updated>2020-08-12T17:19:31.162Z</updated>
+    <updated>2020-09-02T11:20:23.821Z</updated>
     
     <summary type="html">
     
